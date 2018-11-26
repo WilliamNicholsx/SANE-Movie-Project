@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SANE - Index</title>
+    <link href="/SANE-Movie-Project/CSS/Layout.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 224px;
+            height: 76px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section id="SectionHeader">
+            <a href="/SANE-Movie-Project/index.html" id="HeaderImage"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Movies</a></li> 				<!-- Where # = unfilled -->
+                    <li><a href="">TV</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+            </nav>
+            <div class="Searchbar-Container">
+                <form id="searchForm">
+                    <input type="text" class="Searchbar" placeholder="Search for Movies, TV shows, Actors or more..." id="searchText">
+                    <input type="submit" class="action" value="?">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </section>
+    </header>
+    <div class="BodyColor">
+        <div id="PageWrapper">
+            <div id="CenterPage">
+                <aside class="Sidebar">
+                    <div class="innerSidebar">
+                        <div id="SidebarTitle">In Theaters Now...</div>
+                        <ul>
+                            <li>Created by:</li>
+                            <li>William Nichols</li>
+                            <li>Fauzia Ali</li>
+                            <li>Babang Effendi</li>
+                            <li>Kristine Simangan</li>
+                        </ul>
+                    </div>
+                </aside>
+                <section id="MainContent">
+                    <div class="container">
+                        <h1>Currently Trending!</h1>
+                        <div id="movies" class="row"></div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+        <footer class="page-footer js-page-footer">
+            <section id="SectionFooter">
+                <div class="content-wrap">
+                    <nav class="footer-nav js-footer-nav">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Feedback</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Terms</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/SANE-Movie-Project/JS/main.js"></script>
+    <script>
+        getTrending();
+    </script>
+</body>
+</html>
