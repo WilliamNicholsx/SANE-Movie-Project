@@ -59,7 +59,7 @@ function getMovies(search) {
 					<div class="well text-center">
                         <div class="DisplayTitle">
 						<a onclick="movieSelected(${movies[i].id})">
-                            <img src="https://image.tmdb.org/t/p/w500${movies[i].poster_path}" class="DisplayPoster" onerror="this.src='/SANE-Movie-Project/Images'"></a>
+                            <img src="https://image.tmdb.org/t/p/w500${movies[i].poster_path}" class="DisplayPoster" onerror="this.src='/SANE-Movie-Project/Images/PlaceholderPoster.png'"></a>
 						<a onclick="movieSelected(${movies[i].id})" class="btn btn-primary" href="#"><h2>${movies[i].title}</h2></a>
                             <h3>${movie.release_date.substring(0, 4)}</h3>
                                 <p>${movie.overview}</p>
