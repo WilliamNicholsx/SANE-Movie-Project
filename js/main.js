@@ -233,7 +233,7 @@ function getMovie() {
             <h2>${movie.original_title}</h2>
             <h3>(${movie.release_date.substring(0,4)})</h3>
     </div>
-<img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="MoviePoster" onerror="this.src='../images/PlaceholderPoster.png'">
+<img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="MoviePoster" onerror="this.src='/SANE-Movie-Project/Images/PlaceholderPoster.png'">
 <div class="MovieInfoTable">
     <dl>
         <dt><strong>Average Rating:</strong></dt>
