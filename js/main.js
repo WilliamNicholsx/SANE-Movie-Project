@@ -46,6 +46,8 @@ function getMovies(search) {
     if ($('#movies').length) {
         $('.Sidebar').hide();
     }
+    if ($('#movies').length) {
+	$('.container > h1').hide();
 
     
     axios.get("https://api.themoviedb.org/3/search/movie?api_key=bb3435e6fa75215145fc17204790ac6c&language=en-US&query=" + search + "&page=1&include_adult=false")
