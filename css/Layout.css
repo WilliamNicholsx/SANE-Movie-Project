@@ -469,7 +469,7 @@ h4, header, html, img, li, menu, nav, ol, p, section, span, strong, td, ul, var{
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    width: 1200px;
+    width: 1201px;
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
