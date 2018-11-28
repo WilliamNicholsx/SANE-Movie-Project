@@ -278,7 +278,7 @@ body {
 }
 
 .BodyColor {
-    background: #14181c url(../Images/linearbackground.png) 0 -1px repeat-x;
+    background: #14181c url(/Images/linearbackground.png) 0 -1px repeat-x;
     padding: 30px 0;
 }
 
