@@ -1,16 +1,14 @@
 /*#region * */
-/* Defines the main font used throughout the entire site. */
 * {
     font-family: Arial, Sans-Serif;
 }
 /*#endregion*/
 /*#region Footer*/
 .page-footer {
-    width: 100%;
-    bottom: 0;
-    clear: both;
-    position: absolute;
+    padding: 32px 0;
     background-image: url('../Images/13ReasonsHeader.png');
+    width: 100%;
+    margin-top: 20px;
 }
 
 footer .footer-nav {
@@ -67,7 +65,6 @@ footer .footer-nav {
 /*#region Header*/
 #SectionHeader nav {
     font-size: 24px;
-    width: 30%;
     top: 30px;
     float: left;
     position: relative;
@@ -77,7 +74,7 @@ footer .footer-nav {
 }
 
 header {
-    width: 100%;
+    /* width: 1200px; */
     position: relative;
     background-color: transparent;
 }
@@ -170,36 +167,31 @@ h1 {
 /*#endregion*/
 /*#region PageWrapper*/
 #PageWrapper {
-    /*
-    Sets the total width for the entire page. Also sets the background color
-    which is used to fill the background of the Sidebar in case the MainContent section is taller than the Sidebar.
-    Uses margin: auto to center the entire page in the middle of the browser's window.
-  */
     width: auto;
     margin: auto;
-    min-width: 100%;
+    min-width: 1200px;
     overflow: hidden;
+    height: 100%;
     position: relative;
+    min-height: 100%;
+    /* height: auto; */
 }
 
 #CenterPage {
     width: 1100px;
     margin: auto;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 /*#endregion*/
 /*#region Main Content*/
 #MainContent {
-    /*
-    Defines the main content area. The #MainContent element has a minimum height of 500 pixels, but can grow if necessary.
-    The font-size is 80% of its parent element, which in this case comes down to 80% of the font
-    the user has specified as the default font in the browser.
-  */
-    margin: 8px;
-    padding: 10px;
-    width: 1100px;
+    width: 1200px;
     font-size: 0.8em;
     min-height: 678px;
-    /*float: right;*/
+    /* float: right; */
+    /* position: relative; */
 }
 
     #MainContent a {
@@ -267,30 +259,47 @@ h1 {
 /*#endregion*/
 /*#region Html/Body*/
 body {
-    /* 
-    Clears white space around the body and gives it a dark red-brown background color.
-  */
-    padding: 0;
-    margin: 0;
+    height: 100%;
     color: #FFFFFF;
-    padding-bottom: 92px;
-    background: rgb(20,24,28);
+    background-color: rgb(20,24,28);
     background-image: linear-gradient(180deg,#14181c 0,#14181c 100px,#2c3440 101px);
-    background-position: 0 0;
     /*background-color: */
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position: 0 0;
+    position: relative;
 }
 
 .BodyColor {
     background: #14181c url(../Images/linearbackground.png) 0 -1px repeat-x;
     padding: 30px 0;
+    min-height: 100%;
 }
 
 .backdrop > .BodyColor {
     background-image: none;
 }
 
+.BannerContainer {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 675px;
+}
+
+.backdrop {
+    height: 100%;
+    background: #14181c url(../Images/linearbackground.png) 0 -1px repeat-x;
+    position: relative;
+}
+
 html {
     position: relative;
+    min-width: 1200px;
+    height: 100%;
     min-height: 100%;
 }
 
@@ -328,11 +337,10 @@ h4, header, html, img, li, menu, nav, ol, p, section, span, strong, td, ul, var 
 /*#region Searchbar*/
 .Searchbar-Container {
     line-height: 40px;
-    position: relative;
-    left: 595px;
-    width: 400px;
     clear: both;
-    bottom: 19px;
+    top: 29px;
+    position: absolute;
+    right: 5px;
     z-index: 10000;
 }
 
@@ -436,7 +444,11 @@ h4, header, html, img, li, menu, nav, ol, p, section, span, strong, td, ul, var 
     float: left;
     width: 700px;
     background-image: none;
-    min-height: 600px;
+    /* min-height: 600px; */
+    min-height: 100%;
+    /* height: 100%; */
+    height: 100%;
+    position: relative;
 }
 
 .FilmTitle h2 {
@@ -499,7 +511,7 @@ h4, header, html, img, li, menu, nav, ol, p, section, span, strong, td, ul, var 
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    width: 1201px;
+    width: 1200px;
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -634,3 +646,7 @@ h4, header, html, img, li, menu, nav, ol, p, section, span, strong, td, ul, var 
     }
 
 /*#endregion*/
+
+html, body {
+    height: 100%;
+}
