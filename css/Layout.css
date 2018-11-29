@@ -177,7 +177,7 @@ h1 {
   */
     width: auto;
     margin: auto;
-    min-width: 1008px;
+    min-width: 100%;
     overflow: hidden;
     position: relative;
 }
