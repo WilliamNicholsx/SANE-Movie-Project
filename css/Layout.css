@@ -39,6 +39,8 @@ footer .footer-nav {
     flex: 0 0 auto;
     font-family: Arial, Sans-Serif;
     font-weight: normal;
+     float: left;
+      padding: 0;
 }
 
     .page-footer .footer-nav > ul {
@@ -54,8 +56,6 @@ footer .footer-nav {
             display: inline-block;
             font-size: 1.15384615rem;
             margin-right: 2.5em;
-             float: left;
-      padding: 0;
         }
 
 
