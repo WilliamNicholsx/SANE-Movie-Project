@@ -39,8 +39,7 @@ footer .footer-nav {
     flex: 0 0 auto;
     font-family: Arial, Sans-Serif;
     font-weight: normal;
-     float: left;
-      padding: 0;
+    padding: 0;
 }
 
     .page-footer .footer-nav > ul {
