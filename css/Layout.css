@@ -49,6 +49,7 @@ footer .footer-nav {
         top: 35px;
         padding-left: 0;
         left: 200px;
+        font-size: 0;
     }
 
         .page-footer .footer-nav > ul > li {
