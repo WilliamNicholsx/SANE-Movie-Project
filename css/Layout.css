@@ -17,6 +17,7 @@ footer .footer-nav {
     width: 1000px;
     height: 92px;
     margin: 0 auto;
+    position: relative;
 }
 
 .page-footer > .content-wrap {
