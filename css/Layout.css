@@ -45,7 +45,7 @@ footer .footer-nav {
     .page-footer .footer-nav > ul {
         overflow: hidden;
         margin: 0 auto;
-        position: relative;
+        position: absolute;
         top: 35px;
         padding-left: 0;
         left: 200px;
